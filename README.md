@@ -54,8 +54,35 @@ If the control input changes to AB = 10, then all the gates are restricted excep
 ### PROGRAM 
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: vasanth s
+RegisterNumber:  212222110052
+4:1 Multiplexer
+
+module mux(i0, i1, i2, i3, s0, s1, y);
+input i0, i1, i2, i3, s0, s1;
+output y;
+not(s0c, s0);
+nor(s1c, s1);
+wire p, q, r, s, s0c, s1c;
+and(p, s0c, s1c, i0);
+and(q, s0c, s1, i1);
+and(r, s0, s1c, i2);
+and(s, s0, s1, i3);
+or(y, p, q, r, s);
+endmodule
+1:4 Demultiplexer
+
+module demux(y0, y1, y2, y3, s0, s1, i);
+input s0, s1, i;
+output y0, y1, y2, y3;
+wire s0c, s1c;
+nor(s0c, s0);
+nor(s1c, s1);
+and(y0, i, s0c, s1);
+and(y1, i, s0c, s1c);
+and(y2, i, s0, s1c);
+and(y3, i, s0, s1);
+endmodule
 */
 
 
@@ -64,6 +91,11 @@ RegisterNumber:
 
 
 ### RTL LOGIC  
+ Multiplexer:
+![MX](https://github.com/vasanth0908/Exercise-07-Multiplexer-and-De-multiplexer/assets/122000018/abd21b4f-4476-479b-a287-c542c2e81366)
+
+Demultiplexer:
+![DX](https://github.com/vasanth0908/Exercise-07-Multiplexer-and-De-multiplexer/assets/122000018/36fce755-61ec-45d9-b962-7cf9c3023afb)
 
 
 
@@ -73,13 +105,22 @@ RegisterNumber:
 
 
 ### TIMING DIGRAMS  
+ Multiplexer:
+![MX OP](https://github.com/vasanth0908/Exercise-07-Multiplexer-and-De-multiplexer/assets/122000018/d0384438-0de1-4b47-bde9-7235b5797e48)
+
+Demultiplexer:
+![demux_td](https://github.com/vasanth0908/Exercise-07-Multiplexer-and-De-multiplexer/assets/122000018/a961ff61-594b-46d8-91d3-30f765bd2f56)
 
 
 
 
 
 ### TRUTH TABLE 
+ Multiplexer:
+![MX T](https://github.com/vasanth0908/Exercise-07-Multiplexer-and-De-multiplexer/assets/122000018/6580f8a1-9b67-4b12-b835-a6529795433b)
 
+Demultiplexer:
+![DX T](https://github.com/vasanth0908/Exercise-07-Multiplexer-and-De-multiplexer/assets/122000018/51dd575a-abe6-4b8d-b8e3-966110b9e44e)
 
 
 
