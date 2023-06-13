@@ -56,8 +56,9 @@ If the control input changes to AB = 10, then all the gates are restricted excep
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: vasanth s
 RegisterNumber:  212222110052
-4:1 Multiplexer
-
+```
+## 4:1 Multiplexer
+```
 module mux(i0, i1, i2, i3, s0, s1, y);
 input i0, i1, i2, i3, s0, s1;
 output y;
@@ -71,7 +72,7 @@ and(s, s0, s1, i3);
 or(y, p, q, r, s);
 endmodule
 ```
-1:4 Demultiplexer
+## 1:4 Demultiplexer
 ```
 module demux(y0, y1, y2, y3, s0, s1, i);
 input s0, s1, i;
@@ -92,10 +93,10 @@ endmodule
 
 
 ### RTL LOGIC  
- Multiplexer:
+## Multiplexer:
 ![MX](https://github.com/vasanth0908/Exercise-07-Multiplexer-and-De-multiplexer/assets/122000018/abd21b4f-4476-479b-a287-c542c2e81366)
 
-Demultiplexer:
+## Demultiplexer:
 ![DX](https://github.com/vasanth0908/Exercise-07-Multiplexer-and-De-multiplexer/assets/122000018/36fce755-61ec-45d9-b962-7cf9c3023afb)
 
 
@@ -106,10 +107,10 @@ Demultiplexer:
 
 
 ### TIMING DIGRAMS  
- Multiplexer:
+## Multiplexer:
 ![MX OP](https://github.com/vasanth0908/Exercise-07-Multiplexer-and-De-multiplexer/assets/122000018/d0384438-0de1-4b47-bde9-7235b5797e48)
 
-Demultiplexer:
+## Demultiplexer:
 ![demux_td](https://github.com/vasanth0908/Exercise-07-Multiplexer-and-De-multiplexer/assets/122000018/a961ff61-594b-46d8-91d3-30f765bd2f56)
 
 
@@ -117,10 +118,11 @@ Demultiplexer:
 
 
 ### TRUTH TABLE 
- Multiplexer:
-![MX T](https://github.com/vasanth0908/Exercise-07-Multiplexer-and-De-multiplexer/assets/122000018/6580f8a1-9b67-4b12-b835-a6529795433b)
+## Multiplexer:
 
-Demultiplexer:
+![1](https://github.com/vasanth0908/Exercise-07-Multiplexer-and-De-multiplexer/assets/122000018/692c8524-1eb3-4caa-8726-3488fcf77f9c)
+
+## Demultiplexer:
 ![DX T](https://github.com/vasanth0908/Exercise-07-Multiplexer-and-De-multiplexer/assets/122000018/51dd575a-abe6-4b8d-b8e3-966110b9e44e)
 
 
@@ -128,3 +130,5 @@ Demultiplexer:
 
 
 ### RESULTS 
+Thus the program to design a 4x1 multiplexer and 1x4 demultiplexer is done successful.
+
